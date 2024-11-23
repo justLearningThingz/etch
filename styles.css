@@ -1,0 +1,29 @@
+html, body{
+    height:100%;
+    /* width:100%; */
+}
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height:100%;
+    /* width:100%; */
+    display:flex;
+    align-content:stretch;
+    justify-content: space-between;
+    gap:2px;
+}
+.yDiv{
+    display:flex;
+    gap:2px;
+    flex-direction: column;
+    flex:1;
+}
+.box{
+    flex:1;
+    background-color: beige;
+    aspect-ratio: 1/1;
+}

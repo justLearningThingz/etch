@@ -1,11 +1,11 @@
 const container = document.querySelector(".container");
 const backup = 16;
-let input = undefined;
+let input = 0;
 const button = document.querySelector(".btn");
 
-function createGrid(input , backup){
-
-    let gridSize = input ?? backup;
+function createGrid(){
+    console.log(backup);
+    let gridSize = (input>0) ? input : backup;
     console.log(gridSize);
 
     for(let i = 0; i<gridSize; i++){
@@ -34,7 +34,7 @@ button.addEventListener("click", ()=>{
         input = prompt("enter desired grid size - max 100");
     }
     removeChildren(container); 
-    createGrid(input);
+    createGrid();
 });
 
 createGrid(16);

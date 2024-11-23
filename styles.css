@@ -1,6 +1,12 @@
 html, body{
     height:100%;
-    /* width:100%; */
+     width:100%;
+     margin:0px;
+     padding:0px;
+     
+}
+button{
+    margin:5px;
 }
 .header{
     display:flex;
@@ -9,8 +15,9 @@ html, body{
 }
 
 .container{
-    height:100%;
-    /* width:100%; */
+    justify-self: center;
+    height:960px;
+    aspect-ratio: 1/1;
     display:flex;
     align-content:stretch;
     justify-content: space-between;
